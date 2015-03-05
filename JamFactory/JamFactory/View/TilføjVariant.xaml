@@ -6,13 +6,13 @@
         <Label Content="Variant Nr.:" HorizontalAlignment="Left" Margin="10,46,0,0" VerticalAlignment="Top"/>
         <TextBox Name="VariantNr" IsReadOnly="True" HorizontalAlignment="Left" Height="23" Margin="84,50,0,0" TextWrapping="Wrap" Text="1.0" VerticalAlignment="Top" Width="38"/>
         <Label Content="Tilføj Variant" HorizontalAlignment="Left" Margin="191,10,0,0" VerticalAlignment="Top" Height="35" Width="133" FontSize="20" FontWeight="Bold"/>
-        <ComboBox Name="IngredientCombo" HorizontalAlignment="Left" Margin="142,50,0,0" VerticalAlignment="Top" Width="134" Height="23"/>
+        <ComboBox Name="IngredientCombo" HorizontalAlignment="Left" Margin="142,70,0,0" VerticalAlignment="Top" Width="134" Height="23"/>
         <Label Content="Mængde i g. pr. 100 g." HorizontalAlignment="Left" Margin="142,98,0,0" VerticalAlignment="Top" Width="134"/>
         <TextBox Name="amount" HorizontalAlignment="Left" Height="23" Margin="142,129,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="134"/>
         <ListBox Name="IngredientList" HorizontalAlignment="Left" Height="127" Margin="281,50,0,0" VerticalAlignment="Top" Width="150"/>
         <Button Name="AddIngredient" Content="Tilføj Ingrediens" HorizontalAlignment="Left" Margin="142,157,0,0" VerticalAlignment="Top" Width="134" Click="AddIngredient_Click"/>
-        <RadioButton Content="Bær" HorizontalAlignment="Left" Margin="142,78,0,0" VerticalAlignment="Top"/>
-        <RadioButton Content="Ingrediens" HorizontalAlignment="Left" Margin="201,78,0,0" VerticalAlignment="Top"/>
+        <RadioButton Name="BerryRadio" Content="Bær" HorizontalAlignment="Left" Margin="142,50,0,0" VerticalAlignment="Top" Checked="BerryRadio_Checked"/>
+        <RadioButton Name="IngredientRadio" Content="Ingrediens" HorizontalAlignment="Left" Margin="201,50,0,0" VerticalAlignment="Top" Checked="IngredientRadio_Checked"/>
         <Button Name="AddVariant" Content="Tilføj Variant" HorizontalAlignment="Left" Margin="281,182,0,0" VerticalAlignment="Top" Width="150" Height="20"/>
 
     </Grid>

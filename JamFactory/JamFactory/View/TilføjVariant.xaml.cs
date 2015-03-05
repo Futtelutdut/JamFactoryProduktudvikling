@@ -24,20 +24,33 @@ namespace JamFactory.View
         {
             controller = new Controller.Controller();
             InitializeComponent();
-            AddToCombobox();
         }
 
         private void AddIngredient_Click(object sender, RoutedEventArgs e)
         {
 
         }
-        private void AddToCombobox()
+        private void AddToCombobox(int determinator)
         {
-            foreach (string s in controller.GetIngredients())
+            foreach (string s in controller.GetIngredients(determinator))
             {
                 IngredientCombo.Items.Add(s);
             }
             IngredientCombo.SelectedIndex = 0;
+        }
+
+        private void BerryRadio_Checked(object sender, RoutedEventArgs e)
+        {
+            IngredientRadio.IsChecked = false;
+            IngredientCombo.Items.Clear();
+            AddToCombobox(0);
+        }
+
+        private void IngredientRadio_Checked(object sender, RoutedEventArgs e)
+        {
+            BerryRadio.IsChecked = false;
+            IngredientCombo.Items.Clear();
+            AddToCombobox(1);
         }
     }
 }
