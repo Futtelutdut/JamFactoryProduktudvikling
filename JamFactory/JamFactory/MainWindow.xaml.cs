@@ -24,5 +24,11 @@ namespace JamFactory
         {
             InitializeComponent();
         }
+
+        private void AddRecipe_Click(object sender, RoutedEventArgs e)
+        {
+            new View.TilføjVariant().Show();
+            this.Close();
+        }
     }
 }
