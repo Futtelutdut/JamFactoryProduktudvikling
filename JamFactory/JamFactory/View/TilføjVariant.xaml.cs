@@ -44,12 +44,15 @@ namespace JamFactory.View
             IngredientRadio.IsChecked = false;
             IngredientCombo.Items.Clear();
             AddToCombobox(0);
+            amount.Text = "";
+            amount.IsEnabled = false;
         }
 
         private void IngredientRadio_Checked(object sender, RoutedEventArgs e)
         {
             BerryRadio.IsChecked = false;
             IngredientCombo.Items.Clear();
+            amount.IsEnabled = true;
             AddToCombobox(1);
         }
     }
